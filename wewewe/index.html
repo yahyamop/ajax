@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Post Board</title>
+</head>
+<body>
+
+<main class="app">
+    <h1>My Post Board...</h1>
+    <div class="input-header">
+        <h1><span id="date"></span></h1>
+        <button id="themeToggleBtn">Toggle Theme</button>
+        <button id="openModalBtn">Create Post</button>
+    </div>
+    <div class="to-do-list"></div>
+</main>
+
+<!-- Modal for creating posts -->
+<div id="postModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="to-do-input">
+            <input type="text" id="postTitle" placeholder="Enter a title...">
+            <select id="postAuthor">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <textarea id="postInput" placeholder="Enter a post..."></textarea>
+            <button class="button" id="postBtn">Post</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for editing posts -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="to-do-input">
+            <input type="text" id="editTitle" placeholder="Edit title...">
+            <textarea id="editContent" placeholder="Edit post..."></textarea>
+            <button class="button" id="saveEditBtn">Save</button>
+            <button class="button cancelBtn" id="cancelEditBtn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
